@@ -1,0 +1,97 @@
+/* .navbar {
+    background-color: #e25151;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand h1 {
+    margin: 0;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar-nav li {
+    margin-right: 50px;
+  }
+  
+  .navbar-nav li:last-child {
+    margin-right: 10;
+  }
+  
+  .navbar-nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-nav a:hover {
+    text-decoration: underline;
+  } */
+
+/* Navbar.css */
+
+.navbar {
+    background-color: #e64747 ;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand {
+    margin-right: auto;
+  }
+  
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 60px;
+  }
+  
+  .navbar-toggle {
+    display: none; /* Hide toggle button by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .navbar-links {
+      display: none; /* Hide navbar links on smaller screens */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on your navbar height */
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  
+    .navbar-toggle {
+      display: block; /* Display toggle button on smaller screens */
+    }
+  }
+  
+  

@@ -28,11 +28,25 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* App.css */
+/* App.css */
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-panel,
+.right-panel {
+  flex-basis: 48%; /* Set initial width of panels */
+  margin-bottom: 20px; /* Add margin between panels */
+}
+
+@media screen and (max-width: 900px) {
+  .left-panel,
+  .right-panel {
+    flex-basis: 100%; /* Set full width for panels on smaller screens */
   }
 }
+
