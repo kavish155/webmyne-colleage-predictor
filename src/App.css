@@ -43,6 +43,8 @@
   margin-bottom: 20px; /* Add margin between panels */
 }
 
+
+
 @media screen and (max-width: 900px) {
   .left-panel,
   .right-panel {

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
-import InputForm from './Components/InputForm';
-import Results from './Components/Results';
-import './App.css'; // Import main CSS file for styling
+import React, { useState } from "react";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import InputForm from "./Components/InputForm";
+import Results from "./Components/Results";
+import "./App.css"; // Import main CSS file for styling
 
 const App = () => {
   const [colleges, setColleges] = useState([]);
@@ -11,8 +11,22 @@ const App = () => {
   const handleSubmit = (formData) => {
     // Dummy data for demonstration purposes
     const dummyColleges = [
-      { id: 1, name: 'College 1', location: 'Location 1', courses: ['Course A', 'Course B'], cutoffRank: 100 },
-      { id: 2, name: 'College 2', location: 'Location 2', courses: ['Course C', 'Course D'], cutoffRank: 150 }
+      {
+        id: 1,
+        Institute: "College 1",
+        State: "Location 1",
+        Course: "CourseA",
+        Opening_Rank: 100,
+        Closing_Rank:200
+      },
+      {
+        id: 1,
+        Institute: "College 1",
+        State: "Location 1",
+        Course: "CourseA",
+        Opening_Rank: 100,
+        Closing_Rank:200
+      }
     ];
     setColleges(dummyColleges);
   };
@@ -28,7 +42,9 @@ const App = () => {
           <Results colleges={colleges} />
         </div>
       </div>
-      <Footer />
+      <div className="footer-container">
+        <Footer />
+      </div>
     </div>
   );
 };
